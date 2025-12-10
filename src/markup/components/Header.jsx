@@ -5,7 +5,7 @@ import "./Header.css";
 import { Link } from "react-router-dom";
 import { useAuth } from "../../Contexts/AuthContext";
 import loginService from "../services/login.service";
-import Logo from "../../assets/Logo.png"
+import Logo from "../../assets/logo.png"
 
 function Header() {
   // Use the custom hook to access the data in the context
