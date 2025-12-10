@@ -12,4 +12,5 @@ export default defineConfig({
   build: {
     outDir: 'dist', // or any other desired output directory name
   },
+  base: process.env.VITE_BASE_PATH || "/pro-roadmap-client" 
 })
