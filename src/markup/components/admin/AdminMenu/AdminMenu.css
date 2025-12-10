@@ -1,0 +1,21 @@
+.admin-menu {
+  padding: 16px;
+  height: 100vh;
+}
+.admin-menu .list-link {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+.admin-menu .list-link:hover {
+  background: rgba(59, 130, 246, 0.06);
+  border-color: rgba(59, 130, 246, 0.08);
+}
+.admin-menu .list-link:focus {
+  outline: 3px solid rgba(59, 130, 246, 0.12);
+  outline-offset: 3px;
+}

@@ -1,0 +1,46 @@
+DevOps Guide
+
+     * Basic 
+         - Linux Commands
+         - Git & GitHub
+         - Basic Networking (IP, DNS, HTTP)
+         - Bash Scripting
+     * Cloud (Choose ONE first)
+         - AWS (recommended)
+           or 
+         - Azure
+           or 
+         - Google Cloud
+     * Containers
+         - Docker
+         - Dockerfile
+         - Docker Compose
+     * CI/CD
+         - GitHub Actions
+         - GitLab CI
+         - Jenkins
+     * Infrastructure as Code (IaC)
+         - Terraform (main tool)
+         - Provision cloud servers automatically
+     * Kubernetes
+         - Pods
+         - Deployments
+         - Services
+         - Ingress
+         - ConfigMaps
+         - Secrets
+     * Monitoring & Logging
+         - Prometheus
+         - Grafana
+         - ELK Stack (Elasticsearch, Logstash, Kibana)
+     * Automation
+         - Ansible
+         - Shell scripts
+         - Automate deployments & updates
+     * DevOps Concepts
+         - CI vs CD
+         - Blue/Green deployment
+         - Canary deployment
+         - Scaling & Load Balancing
+         - High availability
+       

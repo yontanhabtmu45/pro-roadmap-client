@@ -1,0 +1,159 @@
+.roadmap-container {
+    padding: 20px;
+  }
+  
+  .roadmap-layout {
+    display: grid;
+    grid-template-columns: 260px auto;
+    gap: 30px;
+  }
+  
+  .roadmap-sidebar {
+    background: #111;
+    padding: 20px;
+    border-radius: 12px;
+    position: sticky;
+    top: 20px;
+    height: fit-content;
+  }
+  
+  .roadmap-sidebar h3 {
+    margin-bottom: 10px;
+    color: var(--primary-color);
+  }
+  
+  .roadmap-sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .roadmap-sidebar li {
+    margin-bottom: 12px;
+  }
+  
+  .roadmap-sidebar a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .roadmap-sidebar a:hover {
+    color: white;
+  }
+  
+  .steps-header {
+    margin-top: 20px;
+  }
+  
+  .timeline {
+    margin-top: 30px;
+    border-left: 3px solid var(--primary-color);
+    padding-left: 25px;
+  }
+  
+  .timeline-item {
+    margin-bottom: 30px;
+    display: flex;
+    gap: 20px;
+    position: relative;
+  }
+  
+  .timeline-icon {
+    background: var(--primary-color);
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 18px;
+    position: absolute;
+    left: -42px;
+    top: 0;
+  }
+  
+  .timeline-content {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 12px;
+  }
+  
+  .timeline-content h3 {
+    margin: 0;
+    margin-bottom: 8px;
+    color: var(--primary-color);
+  }
+  
+  .tags {
+    margin-bottom: 10px;
+  }
+  
+  .tag {
+    background: #222;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    margin-right: 6px;
+    color: var(--primary-color);
+  }
+  
+  .desc {
+    color: #ccc;
+    font-size: 14px;
+  }
+
+  /* FILTERS */
+.filters-box {
+    margin: 20px 0;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .filters-box select {
+    background: #111;
+    padding: 10px 12px;
+    border-radius: 8px;
+    color: white;
+    border: 1px solid #333;
+  }
+  
+  /* COLLAPSIBLE HEADER */
+  .timeline-item.header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    padding: 16px;
+    border-radius: 10px;
+    background: #1a1a1a;
+    margin-bottom: 5px;
+  }
+  
+  .timeline-item.header h3 {
+    flex: 1;
+    margin: 0;
+  }
+  
+  /* COLLAPSIBLE CONTENT */
+  .timeline-content {
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    overflow: hidden;
+  }
+  
+  /* RESOURCES */
+  .resources {
+    margin-top: 15px;
+  }
+  
+  .resource-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .resource-item:hover {
+    opacity: 0.8;
+  }
+  

@@ -1,0 +1,22 @@
+
+
+
+    - Navigation links on our app 
+        - Root level public pages  
+          - Home page (/)   
+          - All Roadmaps (/all-roadmaps)
+          - About us page (/about)
+          - Contact us page (/contact)
+          - Admin page 
+            - Show only if logged in, link to the dashboard (/dashboard)
+          - Login (/login)
+          - Sign up (/Register)
+
+
+    - Admin (Login required)
+      - Admin dashboard (/admin)
+      - Roadmaps (/admin/roadmaps)
+      - Add Roadmap (/admin/add-roadmap)
+      - Edit/update Roadmap (/admin/roadmap/edit/:roadmap_id)
+      - steps (/admin/steps)
+      - Edit/update Step (/admin/steps/:step_id)

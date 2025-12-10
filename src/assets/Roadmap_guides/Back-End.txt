@@ -1,0 +1,45 @@
+Back-End Guide
+
+   * Pick a language
+     - JavaScript (Node.js) – easiest for full-stack
+     - Python (Django / Flask)
+     - PHP (Laravel)
+     - Java (Spring Boot)
+     - Go (Go Fiber / Gin)
+___________________________________________
+     - Learn
+       - Variables
+       - Conditions
+       - Loops
+       - Functions
+       - Data structures (arrays, objects)
+       - Error handling
+__________________________________________
+    * Databases
+      |SQL Database
+        - MySQL
+        - PostgreSQL
+        - SQLite
+      |NoSQL Database
+        - MongoDB
+        - Redis
+    * Authentication & Security
+      - JWT (JSON Web Token)
+      - Sessions & Cookies
+      - Password hashing (bcrypt)
+      - Role-based access control
+    * Build APIs
+      - RESTful API design
+      - CRUD operations
+      - File upload
+      - Pagination
+      - Filtering
+      - Search functionality
+    * CI/CD
+      - GitHub Actions
+      - GitLab CI
+    * Deployment 
+      - Render
+      - Railway
+      - Firebase
+      - Vercel (for serverless)

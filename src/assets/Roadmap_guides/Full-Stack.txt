@@ -1,0 +1,27 @@
+Full-Stack Guide
+  
+         
+    * Front-End
+        - HTML
+        - CSS
+         - CSS Libraries
+        - JavaScript
+         - JavaScript Frameworks
+        - version Control
+    
+    * Back-End
+        - Node.js
+        - Database
+          -SQL
+             - MySQL
+             - PostgreSQL
+          -NOSQL
+             - MongoDB
+        - APIs
+          - REST API
+        - Deployment
+          - Netlify
+          - Vercel
+          - Heroku
+          - Render
+          - Firebase

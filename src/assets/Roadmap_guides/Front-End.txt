@@ -1,0 +1,29 @@
+Front End Guide
+  * Basic
+    - HTML 
+    - CSS
+  * styling Libraries
+    - Tailwind CSS
+    - Bootstrap
+__________________________________________
+    - JavaScript / TypeScript
+  * Frameworks 
+    - React (Most popular)
+    - Angular
+    - Vue
+__________________________________________
+  * version Control
+    - Git & Github
+  * Tools
+    - NPM (install packages)
+    - Build Tools (Vite / Webpack)
+  * Testing
+    - Jest
+    - React Testing Library
+  * Web APIs 
+    - REST API
+    - JSON
+  * Advanced Front-End skills
+    - Authentication (JWT/Auth flows)
+    - Performance optimization
+    - Accessibility

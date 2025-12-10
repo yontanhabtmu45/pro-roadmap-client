@@ -1,0 +1,344 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh; 
+    background: #111111;
+}
+.main-highlight{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: aliceblue;
+}
+p, input{
+    color: #888;
+}
+
+.banner-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem;
+    background-image: url("../assets/screen login.png") ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.banner-login p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.singup-wrapper{
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background: #0B1517;
+    width: 100%;
+    height: 100vh;
+    padding: 2rem 6rem;
+}
+.form-signup {
+    position: relative;
+}
+.form-signup form {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+.form-signup form .forgot-password{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: .9rem;
+    margin-bottom: .5rem;
+}
+.form-signup .forgot-password-form input[type="email"]{
+    text-decoration: none;
+    border: 1px solid #888;
+    outline: none;
+    padding: .2rem .5rem;
+    border-radius: 5px;
+    color: #888;
+}
+.form-signup input {
+    outline: none;
+    border: none;
+}
+.form-signup input[type="text"],
+.form-signup input[type="password"] {
+  width: 100%; /* Ensure both inputs take the full width of their container */
+  padding: 0.5rem;
+  padding-right: 2.5rem; /* Add padding to make space for the eye icon */
+  border: 1px solid #444;
+  border-radius: 5px;
+  background: transparent;
+  color: #fff;
+  box-sizing: border-box; /* Ensures padding is included in the width calculation */
+}
+.form-signup input[type="submit"]{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: .5rem;
+    border: none;
+    border-radius: 5px;
+    background: #61dafb;
+    color: #111;
+    font-weight: bold;
+    cursor: pointer;
+}
+.form-signup svg{
+    width: 20px;
+    height: 20px;
+}
+.form-signup 
+.eye-icon {
+  position: absolute;
+  right: 1rem; 
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #888;
+  transition: color 0.3s ease;
+}
+.admin_form .form-control {
+  margin-bottom: 1rem;
+  position: relative;
+  background: transparent;
+  border: solid 1px #444;
+}
+.eye-icon:hover {
+  color: #fff;
+}
+.login-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 1rem; */
+    font-size: .9rem;
+}
+.login-link a{
+    margin-left: .5rem;
+    text-decoration: none;
+}
+
+.another-method{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    margin-top: 1rem;
+}
+/* .another-method .inner-method{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+} */
+.another-method .inner-method .social-login{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.divider {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+  margin: 1rem 0;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #444;
+}
+
+.divider:not(:empty)::before {
+  margin-right: 0.75em;
+}
+
+.divider:not(:empty)::after {
+  margin-left: 0.75em;
+}
+.social-login button {
+  width: 18vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.6rem;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background: transparent;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.social-login button:hover {
+  background: #1f1f1f;
+}
+
+.social-login .social-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Optional provider color hints */
+.google-login:hover {
+  border-color: #db4437;
+}
+
+.github-login:hover {
+  border-color: #6e5494;
+}
+
+/* Error message */
+.validation-error , .error-message {
+  color: #f87171; 
+  background-color: rgba(248, 113, 113, 0.1); 
+  border: 1px solid #f87171;
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+}
+
+/* Message banner used for success/error/info notices */
+.message-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+}
+.message-banner .message-text {
+  flex: 1 1 auto;
+  color: #e6eef6;
+}
+.message-banner .close-btn {
+  background: transparent;
+  border: none;
+  color: inherit;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.message-banner.success {
+  background: linear-gradient(90deg, rgba(34,197,94,0.12), rgba(34,197,94,0.06));
+  border: 1px solid rgba(34,197,94,0.25);
+  color: #6ee7b7;
+}
+.message-banner.error {
+  background: linear-gradient(90deg, rgba(239,68,68,0.08), rgba(239,68,68,0.04));
+  border: 1px solid rgba(239,68,68,0.18);
+  color: #fca5a5;
+}
+.message-banner.info {
+  background: linear-gradient(90deg, rgba(96,165,250,0.06), rgba(96,165,250,0.03));
+  border: 1px solid rgba(96,165,250,0.12);
+  color: #93c5fd;
+}
+
+/* Ensure the table container takes the full width of its parent */
+.table-container {
+  width: 100%;
+  overflow-x: auto; /* Add horizontal scrolling for smaller screens */
+}
+
+/* Make the table take the full width of the container */
+.admin-table {
+  width: 100%;
+  border-collapse: collapse; /* Ensure borders don't double up */
+}
+
+/* Add some padding and alignment to table cells */
+.admin-table th,
+.admin-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #0f151e; /* Add a border to table cells */
+}
+
+/* Add a background color to the table header */
+.admin-table th {
+  background-color: #192334;
+  font-weight: bold;
+}
+
+/* Add hover effect for table rows */
+.admin-table tr:hover {
+  opacity: .6;
+}
+/* Add spacing between Edit and Delete buttons */
+.btn {
+  margin-right: 20px; /* Add a 10px gap between buttons */
+}
+
+.btn:last-child {
+  margin-right: 0; /* Remove margin for the last button in the row */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .admin-table th,
+  .admin-table td {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+/* Make editor fully transparent */
+.rich-editor .ql-toolbar,
+.rich-editor .ql-container,
+.rich-editor .ql-editor {
+  background: transparent !important;
+  border: 1px solid #676666e0 !important;
+  box-shadow: none !important;
+}
+
+/* Transparent toolbar buttons */
+.rich-editor .ql-toolbar button {
+  background: transparent !important;
+  border: none !important;
+}
+
+/* Transparent dropdowns */
+.rich-editor .ql-toolbar .ql-picker {
+  background: transparent !important;
+  border: none !important;
+}
+
+/* Editor text color adapts to your site */
+.rich-editor .ql-editor {
+  color: inherit !important;
+}
+
+/* Remove Quill default border */
+.ql-toolbar.ql-snow + .ql-container.ql-snow {
+  border-top: none !important;
+}
+
+
+.rich-editor .ql-editor {
+  padding: 12px 10px !important;
+  font-size: 1.2rem;
+}
