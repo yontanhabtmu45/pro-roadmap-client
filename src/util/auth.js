@@ -1,5 +1,6 @@
 // function to read the data from the user's localstorage
-const api_url = "http://localhost:1010/api";
+// const api_url = "http://localhost:1010/api";
+const api_url = "https://pro-roadmap-server-1.onrender.com";
 export const getUserData = () => {
   const userData = localStorage.getItem("userData");
   return userData ? JSON.parse(userData) : null;

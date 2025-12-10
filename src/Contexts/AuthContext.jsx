@@ -9,7 +9,8 @@ export const useAuth = () => {
     return React.useContext(AuthContext);
 }
 
-const API_URL = "http://localhost:1010"
+// const API_URL = "http://localhost:1010"
+const API_URL = "https://pro-roadmap-server-1.onrender.com"
 
 // Create the AuthProvider component
 export const AuthProvider = ({ children }) => {

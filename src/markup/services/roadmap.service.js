@@ -1,4 +1,5 @@
-const api_url = "http://localhost:1010/api";
+// const api_url = "http://localhost:1010/api";
+const api_url = "https://pro-roadmap-server-1.onrender.com";
 
 // A function to create roadmaps
 export const createRoadmap = async (formData) => {
