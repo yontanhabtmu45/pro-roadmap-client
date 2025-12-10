@@ -136,13 +136,6 @@ p, input{
     gap: .5rem;
     margin-top: 1rem;
 }
-/* .another-method .inner-method{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-} */
 .another-method .inner-method .social-login{
     display: flex;
     justify-content: space-around;
