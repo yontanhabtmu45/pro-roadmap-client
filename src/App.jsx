@@ -9,8 +9,8 @@ import Register from "./markup/Pages/Register";
 import Login from "./markup/Pages/Login";
 import ForgotPassword from "./markup/Pages/ForgotPassword";
 
-import { gapi } from "gapi-script";
-import Header from "./markup/components/Header";
+
+
 import AllRoadmaps from "./markup/Pages/AllRoadmaps";
 import About from "./markup/Pages/About";
 import Dashboard from "./markup/components/admin/Dashboard/Dashboard";
@@ -25,11 +25,9 @@ import EditStep from "./markup/Pages/admin/EditStep";
 import RoadmapSteps from "./markup/Pages/RoadmapSteps";
 import Unauthorized from "./markup/Pages/Unauthorized";
 import Four04 from "./markup/Pages/Four04";
-import PrivateAuthRoute from "./markup/components/Auth/PrivateAuthRoute";
 import Contact from "./markup/Pages/Contact";
 
-const clientId =
-  "1083223003406-b78mdntufb75hg2srm1uuritag9bcf8f.apps.googleusercontent.com";
+
 
 function App() {
   return (
