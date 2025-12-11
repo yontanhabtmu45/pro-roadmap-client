@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import "./App.css";
 import "react-responsive-carousel/lib/styles/carousel.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 // import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 import { Routes, Route } from "react-router-dom";
