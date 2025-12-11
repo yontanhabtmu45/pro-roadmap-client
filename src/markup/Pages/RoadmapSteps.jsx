@@ -68,6 +68,23 @@ function RoadmapSteps() {
     loadData();
   }, [roadmap_id]);
 
+  // Remove HTML tags and limit to first 2 sentences
+  const getTwoSentencesClean = (html) => {
+    if (!html) return "";
+
+    // Remove all HTML tags
+    const text = html.replace(/<\/?[^>]+(>|$)/g, "").trim();
+
+    // Split sentences
+    const sentences = text.split(/[.!?]/).filter((s) => s.trim() !== "");
+
+    // Rebuild first 2 sentences
+    const shortText = sentences.slice(0, 2).join(". ") + ".";
+
+    // Add "..." if more sentences exist
+    return sentences.length > 2 ? shortText + "..." : shortText;
+  };
+
   return (
     <>
       <Header />
@@ -110,7 +127,7 @@ function RoadmapSteps() {
               </Link>
 
               <h1 className="hero-title">{roadmap.title}</h1>
-              <p className="hero-sub">{roadmap.description}</p>
+              <p className="hero-sub">{getTwoSentencesClean(roadmap.description)}</p>
 
               <h2 className="steps-header">Roadmap Steps</h2>
 
