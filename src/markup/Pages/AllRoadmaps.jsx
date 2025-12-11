@@ -17,8 +17,8 @@ function AllRoadmaps() {
       const result = await getAllRoadmaps();
       if (result.success) {
 
-        // Sort DESC by roadmap_id
-        let sorted = [...result.data].sort((a, b) => b.roadmap_id - a.roadmap_id);
+        // Sort ASCE by roadmap_id
+        let sorted = [...result.data].sort((a, b) => a.roadmap_id - b.roadmap_id);
 
         setRoadmaps(sorted);
         setFiltered(sorted);
@@ -37,8 +37,8 @@ function AllRoadmaps() {
       r.title.toLowerCase().includes(s)
     );
 
-    // Keep descending order
-    filteredList = filteredList.sort((a, b) => b.roadmap_id - a.roadmap_id);
+    // Keep ascending order
+    filteredList = filteredList.sort((a, b) => a.roadmap_id - b.roadmap_id);
 
     setFiltered(filteredList);
   }, [search, roadmaps]);
