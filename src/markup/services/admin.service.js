@@ -62,7 +62,7 @@ export const register = async (formData) => {
 // =========================
 export const getAllAdmins = async () => {
   try {
-    const response = await fetch(`${api_url}/admin/all`, {
+    const response = await fetch(`${api_url}/admins`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
