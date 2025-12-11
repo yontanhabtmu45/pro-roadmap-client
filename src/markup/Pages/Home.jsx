@@ -36,7 +36,7 @@ function Home() {
               aria-label="Search roadmaps"
             >
               {/* <input type="search" placeholder="Search roadmaps..." aria-label="Search roadmaps" /> */}
-              <p className="hero-sub" aria-label="Search roadmaps">Explore all skills</p>
+              <p className="hero-sub hero-holder" >Explore all skills</p>
               <Link to="/AllRoadmaps">
                 <button className="btn ghost" aria-label="Search">
                   Search

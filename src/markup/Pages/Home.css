@@ -116,6 +116,9 @@ body{
 	justify-content:flex-end;
 }
 
+.hero-holder{
+	margin: 0 1.3rem;
+}
 .search-bar{
 	max-width:420px;
 	width:100%;
