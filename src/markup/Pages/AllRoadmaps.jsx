@@ -16,7 +16,7 @@ function AllRoadmaps() {
     async function fetchData() {
       const result = await getAllRoadmaps();
       if (result.success) {
-        sortedRoadmap = result.data.sort(
+        const sortedRoadmap = result.data.sort(
           (a, b) => b.roadmap_id - a.roadmap_id
         )
         setRoadmaps(sortedRoadmap.data);
