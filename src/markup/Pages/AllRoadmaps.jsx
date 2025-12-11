@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { getAllRoadmaps } from "../services/roadmap.service"; 
-import "../Pages/Home.css"; // reuse full styling
+import "../Pages/Home.css"; 
 
 function AllRoadmaps() {
   const [roadmaps, setRoadmaps] = useState([]);
