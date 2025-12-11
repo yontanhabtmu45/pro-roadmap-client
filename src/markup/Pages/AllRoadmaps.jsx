@@ -35,6 +35,22 @@ function AllRoadmaps() {
     setFiltered(f);
   }, [search, roadmaps]);
 
+  // Remove HTML tags and limit to first 2 sentences
+  const getTwoSentencesClean = (html) => {
+    if (!html) return "";
+
+    // Remove all HTML tags
+    const text = html.replace(/<\/?[^>]+(>|$)/g, "").trim();
+
+    // // Split sentences
+    // const sentences = text.split(/[.!?]/).filter((s) => s.trim() !== "");
+
+    // // Rebuild first 2 sentences
+    // const shortText = sentences.slice(0, 2).join(". ") + ".";
+
+    // // Add "..." if more sentences exist
+    // return sentences.length > 2 ? shortText + "..." : shortText;
+  };
 
   return (
     <>
@@ -79,7 +95,7 @@ function AllRoadmaps() {
             filtered.map((roadmap) => (
               <article className="card" key={roadmap.roadmap_id} tabIndex="0">
                 <h3 className="card-title">{roadmap.title}</h3>
-                <p className="card-desc">{roadmap.description}</p>
+                <p className="card-desc">{getTwoSentencesClean(roadmap.description)}</p>
 
                 <div className="card-footer">
                   <span className="pill">{roadmap.level || "All Levels"}</span>
