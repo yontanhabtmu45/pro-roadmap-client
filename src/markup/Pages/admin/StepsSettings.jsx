@@ -28,7 +28,7 @@ function StepsSettings() {
             (a, b) => b.step_order - a.step_order
           );
           setSteps(sortedSteps);
-          console.log(res.data);
+          // console.log(res.data);
         } else {
           setError(res.message || "Failed to fetch Steps");
         }

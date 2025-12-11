@@ -16,7 +16,10 @@ function AllRoadmaps() {
     async function fetchData() {
       const result = await getAllRoadmaps();
       if (result.success) {
-        setRoadmaps(result.data);
+        sortedRoadmap = result.data.sort(
+          (a, b) => b.step_order - a.step_order
+        )
+        setRoadmaps(sortedRoadmap.data);
         setFiltered(result.data);
       } else {
         setError(result.message);
