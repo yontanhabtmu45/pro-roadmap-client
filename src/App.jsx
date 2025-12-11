@@ -38,8 +38,8 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/Register" element={<Register />} />
+        <Route path="/log" element={<Login />} />
+        <Route path="/Reg" element={<Register />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/AllRoadmaps" element={<AllRoadmaps />} />
         <Route path="/About" element={<About />} />
@@ -50,7 +50,7 @@ function App() {
 
         {/* Protected admin route */}
         <Route
-          path="/admin"
+          path="/ad"
           element={
            
               <Dashboard />
@@ -58,7 +58,7 @@ function App() {
           }
         />
         <Route
-          path="/admins"
+          path="/ads"
           element={
             
               <ManageAdmins />
@@ -66,7 +66,7 @@ function App() {
           }
         />
         <Route
-          path="/admin/roadmaps"
+          path="/ad/roadmaps"
           element={
             
               <ManageRoadmaps />
@@ -74,7 +74,7 @@ function App() {
           }
         />
         <Route
-          path="/admin/roadmap"
+          path="/ad/roadmap"
           element={
             
               <AddRoadmap />
@@ -82,7 +82,7 @@ function App() {
           }
         />
         <Route
-          path="/admin/steps"
+          path="/ad/steps"
           element={
             
               <StepsSettings />
@@ -90,7 +90,7 @@ function App() {
           }
         />
         <Route
-          path="/admin/step"
+          path="/ad/step"
           element={
             
               <AddStep />
@@ -98,7 +98,7 @@ function App() {
           }
         />
         <Route
-          path="/admin/edit-admin/:id"
+          path="/ad/edit-ad/:id"
           element={
             
               <EditAdmin />
@@ -106,7 +106,7 @@ function App() {
           }
         />
         <Route
-          path="/admin/roadmap/edit-roadmap/:id"
+          path="/ad/roadmap/edit-roadmap/:id"
           element={
             
               <EditRoadmap />
@@ -114,7 +114,7 @@ function App() {
           }
         />
         <Route
-          path="/admin/step/edit-step/:id"
+          path="/ad/step/edit-step/:id"
           element={
             
               <EditStep />
