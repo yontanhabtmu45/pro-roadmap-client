@@ -42,14 +42,14 @@ function AllRoadmaps() {
     // Remove all HTML tags
     const text = html.replace(/<\/?[^>]+(>|$)/g, "").trim();
 
-    // // Split sentences
-    // const sentences = text.split(/[.!?]/).filter((s) => s.trim() !== "");
+    // Split sentences
+    const sentences = text.split(/[.!?]/).filter((s) => s.trim() !== "");
 
-    // // Rebuild first 2 sentences
-    // const shortText = sentences.slice(0, 2).join(". ") + ".";
+    // Rebuild first 2 sentences
+    const shortText = sentences.slice(0, 2).join(". ") + ".";
 
-    // // Add "..." if more sentences exist
-    // return sentences.length > 2 ? shortText + "..." : shortText;
+    // Add "..." if more sentences exist
+    return sentences.length > 2 ? shortText + "..." : shortText;
   };
 
   return (
