@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react"; 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { getAllRoadmaps } from "../services/roadmap.service"; 
@@ -16,8 +16,12 @@ function AllRoadmaps() {
     async function fetchData() {
       const result = await getAllRoadmaps();
       if (result.success) {
-        setRoadmaps(result.data);
-        setFiltered(result.data);
+
+        // Sort DESC by roadmap_id
+        let sorted = [...result.data].sort((a, b) => b.roadmap_id - a.roadmap_id);
+
+        setRoadmaps(sorted);
+        setFiltered(sorted);
       } else {
         setError(result.message);
       }
@@ -29,26 +33,22 @@ function AllRoadmaps() {
   // Search filter
   useEffect(() => {
     const s = search.toLowerCase();
-    const f = roadmaps.filter((r) =>
+    let filteredList = roadmaps.filter((r) =>
       r.title.toLowerCase().includes(s)
     );
-    setFiltered(f);
+
+    // Keep descending order
+    filteredList = filteredList.sort((a, b) => b.roadmap_id - a.roadmap_id);
+
+    setFiltered(filteredList);
   }, [search, roadmaps]);
 
-  // Remove HTML tags and limit to first 2 sentences
+  // Remove HTML tags and keep first 2 sentences
   const getTwoSentencesClean = (html) => {
     if (!html) return "";
-
-    // Remove all HTML tags
     const text = html.replace(/<\/?[^>]+(>|$)/g, "").trim();
-
-    // Split sentences
     const sentences = text.split(/[.!?]/).filter((s) => s.trim() !== "");
-
-    // Rebuild first 2 sentences
     const shortText = sentences.slice(0, 2).join(". ") + ".";
-
-    // Add "..." if more sentences exist
     return sentences.length > 2 ? shortText + "..." : shortText;
   };
 
@@ -57,8 +57,6 @@ function AllRoadmaps() {
       <Header />
 
       <main className="home-container">
-
-        {/* PAGE TITLE */}
         <h1 className="hero-title" style={{ marginBottom: "12px" }}>
           All Roadmaps
         </h1>
@@ -66,7 +64,6 @@ function AllRoadmaps() {
           Explore all available learning paths from beginner to expert.
         </p>
 
-        {/* SEARCH BAR */}
         <div className="search-bar" style={{ maxWidth: "420px", marginBottom: "20px" }}>
           <input
             type="search"
@@ -76,20 +73,10 @@ function AllRoadmaps() {
           />
         </div>
 
-        {/* LOADING */}
         {loading && <p className="muted">Loading roadmaps...</p>}
+        {error && !loading && <p style={{ color: "red", fontWeight: "600" }}>{error}</p>}
+        {!loading && filtered.length === 0 && <p className="muted">No roadmaps found.</p>}
 
-        {/* ERROR */}
-        {error && !loading && (
-          <p style={{ color: "red", fontWeight: "600" }}>{error}</p>
-        )}
-
-        {/* DATA EMPTY */}
-        {!loading && filtered.length === 0 && (
-          <p className="muted">No roadmaps found.</p>
-        )}
-
-        {/* ROADMAP GRID */}
         <section className="roadmap-grid">
           {!loading &&
             filtered.map((roadmap) => (
