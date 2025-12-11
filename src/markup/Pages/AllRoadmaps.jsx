@@ -20,7 +20,7 @@ function AllRoadmaps() {
           (a, b) => b.roadmap_id - a.roadmap_id
         )
         setRoadmaps(sortedRoadmap.data);
-        setFiltered(result.data);
+        setFiltered(sortedRoadmap.data);
       } else {
         setError(result.message);
       }
