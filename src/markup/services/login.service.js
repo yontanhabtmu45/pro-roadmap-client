@@ -1,5 +1,5 @@
 // const api_url = "http://localhost:1010/api";
-const api_url = "https://pro-roadmap-server-1.onrender.com";
+const api_url = "https://pro-roadmap-server-1.onrender.com/api";
 
 
 // A function to send the register request to the server
