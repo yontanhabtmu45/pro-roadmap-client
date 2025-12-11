@@ -50,7 +50,7 @@ function EditRoadmap() {
       const res = await roadmapService.updateRoadmap(id, form);
       if (res.success) {
         setSuccessMessage("roadmap updated successfully");
-        setTimeout(() => navigate("/admin/roadmaps"), 900);
+        setTimeout(() => navigate("/ad/roadmaps"), 900);
       } else {
         setServerError(res.message || "Update failed");
       }

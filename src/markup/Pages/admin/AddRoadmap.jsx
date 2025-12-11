@@ -72,7 +72,7 @@ function AddRoadmap() {
       if (res.success) {
         setSuccessMessage("Roadmap added successfully!");
         setTimeout(() => {
-          navigate("/admin/roadmaps"); // Redirect to the roadmaps list page
+          navigate("/ad/roadmaps"); // Redirect to the roadmaps list page
         }, 1200);
       } else {
         setServerError(res.message || "Failed to add roadmap");

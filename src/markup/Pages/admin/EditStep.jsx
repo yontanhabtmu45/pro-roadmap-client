@@ -56,7 +56,7 @@ function EditRoadmap() {
       const res = await stepService.updateStep(id, payload);
       if (res.success) {
         setSuccessMessage("step updated successfully");
-        setTimeout(() => navigate("/admin/steps"), 900);
+        setTimeout(() => navigate("/ad/steps"), 900);
       } else {
         setServerError(res.message || "Update failed");
       }

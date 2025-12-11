@@ -77,7 +77,7 @@ function AddStep() {
       if (res.success) {
         setSuccessMessage("Step added successfully!");
         setTimeout(() => {
-          navigate(`/admin/steps`);
+          navigate(`/ad/steps`);
         }, 1200);
       } else {
         setServerError(res.message || "Failed to add step");

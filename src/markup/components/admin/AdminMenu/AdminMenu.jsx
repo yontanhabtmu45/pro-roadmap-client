@@ -20,32 +20,32 @@ function AdminMenu() {
 
       <div className="list-group" style={{ marginTop: 12 }}>
 
-        <Link to="/admin" className="list-link">
+        <Link to="/ad" className="list-link">
           <RiDashboardLine className="menu-icon" />
           Dashboard
         </Link>
 
-        <Link to="/admins" className="list-link">
+        <Link to="/ads" className="list-link">
           <RiAdminLine className="menu-icon" />
           Manage Admins
         </Link>
 
-        <Link to="/admin/roadmaps" className="list-link">
+        <Link to="/ad/roadmaps" className="list-link">
           <RiRoadMapLine className="menu-icon" />
           Manage Roadmaps
         </Link>
 
-        <Link to="/admin/roadmap" className="list-link">
+        <Link to="/ad/roadmap" className="list-link">
           <RiAddLine className="menu-icon" />
           Add New Roadmap
         </Link>
 
-        <Link to="/admin/steps" className="list-link">
+        <Link to="/ad/steps" className="list-link">
           <RiSettings3Line className="menu-icon" />
           Steps Settings
         </Link>
 
-        <Link to="/admin/step" className="list-link">
+        <Link to="/ad/step" className="list-link">
           <RiFileAddLine className="menu-icon" />
           Add New Step
         </Link>

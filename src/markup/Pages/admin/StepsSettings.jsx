@@ -71,7 +71,7 @@ function StepsSettings() {
 
   const handleEdit = (step_id) => {
     // Redirect to the edit step page
-    window.location.href = `/admin/step/edit-step/${step_id}`;
+    window.location.href = `/ad/step/edit-step/${step_id}`;
   };
 
   const filteredSteps = steps.filter((step) =>

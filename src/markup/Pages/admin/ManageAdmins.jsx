@@ -55,7 +55,7 @@ function ManageAdmins() {
 
   const handleEdit = (admin_id) => {
     // Redirect to the edit admin page
-    window.location.href = `/admin/edit-admin/${admin_id}`;
+    window.location.href = `/ad/edit-admin/${admin_id}`;
   };
 
   const filteredAdmins = admins.filter((admin) =>

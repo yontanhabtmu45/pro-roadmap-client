@@ -65,7 +65,7 @@ function ManageRoadmaps() {
   };
 
   const handleEdit = (roadmap_id) => {
-    window.location.href = `/admin/roadmap/edit-roadmap/${roadmap_id}`;
+    window.location.href = `/ad/roadmap/edit-roadmap/${roadmap_id}`;
   };
 
   const filteredRoadmaps = roadmaps.filter((roadmap) =>

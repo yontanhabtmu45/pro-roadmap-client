@@ -49,7 +49,7 @@ function EditAdmin() {
       const res = await adminService.updateAdmin(id, form);
       if (res.success) {
         setSuccessMessage("Admin updated successfully");
-        setTimeout(() => navigate("/admins"), 900);
+        setTimeout(() => navigate("/ads"), 900);
       } else {
         setServerError(res.message || "Update failed");
       }
