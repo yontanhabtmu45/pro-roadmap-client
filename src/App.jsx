@@ -31,11 +31,16 @@ import Unauthorized from "./markup/Pages/Unauthorized";
 import Four04 from "./markup/Pages/Four04";
 import Contact from "./markup/Pages/Contact";
 
+import { SpeedInsights } from "@vercel/speed-insights/react"
+import { Analytics } from "@vercel/analytics/react"
+
 
 
 function App() {
   return (
     <>
+    <SpeedInsights />
+    <Analytics />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/log" element={<Login />} />
