@@ -107,13 +107,13 @@ function Contact() {
               style={{ flexDirection: "column", gap: "12px", padding: "16px" }}
             >
               <input
-                name="user_name"
+                name="from_name"
                 type="text"
                 placeholder="Your name"
                 required
               />
               <input
-                name="user_email"
+                name="from_email"
                 type="email"
                 placeholder="Your email"
                 required
