@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2"
 
 function Contact() {
 
@@ -19,8 +20,12 @@ function Contact() {
       })
       .then(
         () => {
+          Swal.fire({
+            title: "Success!",
+            text: "Message Sent!",
+            icon: "success"
+          });
           console.log("SUCCESS!");
-          alert("Message successfully sent")
           form.current.reset();
         },
         (error) => {
