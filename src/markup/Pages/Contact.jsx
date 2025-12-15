@@ -29,6 +29,11 @@ function Contact() {
           form.current.reset();
         },
         (error) => {
+          Swal.fire({
+            title: 'Error!',
+            text: 'Message not sent',
+            icon: 'error',
+          })
           console.log("FAILED...", error.text);
         }
       );
