@@ -6,6 +6,10 @@ import Footer from "../components/Footer";
 import emailjs from "@emailjs/browser";
 
 function Contact() {
+
+  const form = useRef(null);
+
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -16,6 +20,7 @@ function Contact() {
       .then(
         () => {
           console.log("SUCCESS!");
+          form.current.reset();
         },
         (error) => {
           console.log("FAILED...", error.text);
