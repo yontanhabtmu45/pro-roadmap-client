@@ -20,6 +20,7 @@ function Contact() {
       .then(
         () => {
           console.log("SUCCESS!");
+          alert("Message successfully sent")
           form.current.reset();
         },
         (error) => {
