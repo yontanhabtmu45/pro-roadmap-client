@@ -40,7 +40,7 @@ function ManageRoadmaps() {
     setMessage(text);
     setMessageType(type);
     setShowMessage(true);
-    setTimeout(() => setShowMessage(false), 3000); // fade out after 3 seconds
+    setTimeout(() => setShowMessage(false), 3000); 
   };
 
   const handleDelete = async (roadmap_id) => {
@@ -71,6 +71,23 @@ function ManageRoadmaps() {
   const filteredRoadmaps = roadmaps.filter((roadmap) =>
     roadmap.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
+
+  // Remove HTML tags and limit to first 2 sentences
+  const getTwoSentencesClean = (html) => {
+    if (!html) return "";
+
+    // Remove all HTML tags
+    const text = html.replace(/<\/?[^>]+(>|$)/g, "").trim();
+
+    // Split sentences
+    const sentences = text.split(/[.!?]/).filter((s) => s.trim() !== "");
+
+    // Rebuild first 2 sentences
+    const shortText = sentences.slice(0, 2).join(". ") + ".";
+
+    // Add "..." if more sentences exist
+    return sentences.length > 2 ? shortText + "..." : shortText;
+  };
 
   return (
     <div className="dashboard-wrap">
@@ -122,7 +139,7 @@ function ManageRoadmaps() {
                       <tr key={roadmap.roadmap_id}>
                         <td>{roadmap.roadmap_id}</td>
                         <td>{roadmap.title}</td>
-                        <td>{roadmap.description}</td>
+                        <td>{getTwoSentencesClean(roadmap.description)}</td>
                         <td>{roadmap.category}</td>
                         <td>
                           <button
