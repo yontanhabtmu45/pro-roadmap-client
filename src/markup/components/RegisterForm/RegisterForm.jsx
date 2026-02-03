@@ -85,7 +85,7 @@ function Register() {
                     if (res.success) {
                       // Registration succeeded — show success and navigate shortly
                       setSuccessMessage("Registration successful — redirecting to login...");
-                      setTimeout(() => navigate("/login"), 1100);
+                      setTimeout(() => navigate("/log"), 1100);
                     } else {
                       setServerError(res.message || "Registration failed");
                     }
@@ -179,7 +179,7 @@ function Register() {
               </form>
               <div className="login-link">
                 Already have an account?
-                <Link to="/login">Login</Link>
+                <Link to="/log">Login</Link>
               </div>
             </div>
           </div>

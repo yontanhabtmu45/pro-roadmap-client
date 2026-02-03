@@ -97,8 +97,8 @@ function LoginForm() {
           // show success banner briefly then redirect
           setSuccessMessage("Login successful — redirecting...");
           setTimeout(() => {
-            navigate("/admin");
-            if (location.pathname === "/login") {
+            navigate("/ad");
+            if (location.pathname === "/log") {
               window.location.replace("/");
             } else {
               window.location.reload();
@@ -215,7 +215,7 @@ function LoginForm() {
               </form>
               <div className="login-link">
                 Don't have an account?
-                <Link to="/Register">Sign Up</Link>
+                <Link to="/Reg">Sign Up</Link>
               </div>
             </div>
             <div className="another-method">
