@@ -46,7 +46,7 @@ function StepsSettings() {
     setMessage(text);
     setMessageType(type);
     setShowMessage(true);
-    setTimeout(() => setShowMessage(false), 3000); // fade out after 3 seconds
+    setTimeout(() => setShowMessage(false), 3000); 
   };
 
   const handleDelete = async (step_id) => {

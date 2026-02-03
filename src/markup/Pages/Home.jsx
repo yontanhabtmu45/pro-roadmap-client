@@ -23,7 +23,7 @@ function Home() {
               <Link to="/AllRoadmaps" className="btn">
                 Explore All Roadmaps
               </Link>
-              <Link to="/Register" className="btn ghost">
+              <Link to="/Reg" className="btn ghost">
                 Get Started
               </Link>
             </div>

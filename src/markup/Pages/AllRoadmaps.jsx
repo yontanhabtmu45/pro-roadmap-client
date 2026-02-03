@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react"; 
+import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { getAllRoadmaps } from "../services/roadmap.service"; 
@@ -86,9 +87,9 @@ function AllRoadmaps() {
 
                 <div className="card-footer">
                   <span className="pill">{roadmap.level || "All Levels"}</span>
-                  <a href={`/roadmap/${roadmap.roadmap_id}`} className="btn">
+                  <Link to={`/roadmap/${roadmap.roadmap_id}`} className="btn">
                     View
-                  </a>
+                  </Link>
                 </div>
               </article>
             ))}
