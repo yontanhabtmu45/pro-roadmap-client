@@ -30,7 +30,7 @@ function LoginForm() {
   const handleLogout = () => {
     googleLogout();
     console.log("Logout successful");
-    navigate("/register");
+    navigate("/Reg");
   };
 
   const handleloginsucess = () => {

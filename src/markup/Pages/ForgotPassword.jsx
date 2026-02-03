@@ -46,7 +46,7 @@ function ForgotPassword() {
               <div className="login-link">
                 Remembered your password?
                 <button
-                  onClick={() => navigate("/login")}
+                  onClick={() => navigate("/log")}
                   style={{
                     background: "none",
                     border: "none",
