@@ -2,10 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Footer() {
+    const currentYear = new Date().getFullYear();
+
     return (
         <footer className="site-footer" role="contentinfo">
             <div className="footer-inner">
-                <div>&copy; 2025 ProRoadmaps. All rights reserved.</div>
+                <div>&copy; {currentYear} ProRoadmaps. All rights reserved.</div>
                 <nav aria-label="Footer navigation">
                     <ul>
                         <li><Link to="/">Home</Link></li>
